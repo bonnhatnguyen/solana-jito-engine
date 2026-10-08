@@ -1,0 +1,40 @@
+{
+  "name": "@bonnhatnguyen/solana-jito-engine",
+  "version": "1.0.0",
+  "description": "Ultra-Low Latency Jito MEV Bundle Engine & Tip Optimizer for Solana — Sub-100ms multi-engine bundle routing, dynamic tip floor percentile analysis, and atomic bundle builder",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "solana-jito": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "test": "node --test dist/tests/*.test.js"
+  },
+  "keywords": [
+    "solana",
+    "jito",
+    "mev",
+    "bundle",
+    "tip-floor",
+    "defi",
+    "low-latency",
+    "arbitrage",
+    "trading"
+  ],
+  "author": "bonnhatnguyen",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "commander": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
